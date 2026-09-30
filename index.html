@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="cat">^o^</div>
+            <div>
+                <p class="small-title">USER INFORMATION</p>
+                <h1>My User Info Card</h1>
+                <p class="intro">Enter your information below and click the button to see your user card.</p>
+            </div>
+        </header>
+
+        <section class="form-card">
+            <h2>About Me</h2>
+            <p class="section-text">Please fill out the fields.</p>
+
+            <form id="userForm">
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" class="user-input" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="nickname">Nickname</label>
+                        <input type="text" id="nickname" class="user-input">
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="user-input" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" class="user-input">
+                    </div>
+
+                    <div class="field">
+                        <label for="birthday">Birthday</label>
+                        <input type="date" id="birthday" class="user-input">
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="user-input">
+                    </div>
+
+                    <div class="field">
+                        <label for="school">School / University</label>
+                        <input type="text" id="school" class="user-input">
+                    </div>
+
+                    <div class="field">
+                        <label for="course">Course / Program</label>
+                        <input type="text" id="course" class="user-input">
+                    </div>
+
+                    <div class="field">
+                        <label for="dreamJob">Dream Job</label>
+                        <input type="text" id="dreamJob" class="user-input">
+                    </div>
+
+                    <div class="field">
+                        <label for="favoriteSong">Favorite Song</label>
+                        <input type="text" id="favoriteSong" class="user-input">
+                    </div>
+                </div>
+
+                <div class="bottom-grid">
+                    <fieldset>
+                        <legend>Favorite Color</legend>
+                        <label><input type="radio" name="favoriteColor" value="Pink"> Pink</label>
+                        <label><input type="radio" name="favoriteColor" value="Lavender"> Lavender</label>
+                        <label><input type="radio" name="favoriteColor" value="Blue"> Baby Blue</label>
+                        <label><input type="radio" name="favoriteColor" value="Cream"> Cream</label>
+                    </fieldset>
+
+                    <div class="field">
+                        <label for="catMood">Favorite Cat Personality</label>
+                        <select id="catMood" class="user-input">
+                            <option value="">Choose one</option>
+                            <option value="Sleepy">Sleepy</option>
+                            <option value="Sweet">Sweet</option>
+                            <option value="Playful">Playful</option>
+                            <option value="Study Cat">Study Cat</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="button" id="showInfoBtn">Show My Info</button>
+                <p id="message"></p>
+            </form>
+        </section>
+
+        <section id="outputSection" class="output-card">
+            <h2>Your Information</h2>
+            <div id="infoOutput"></div>
+        </section>
+
+        <p class="footer">Ma. Criselle B. Enraca | 2IT-A | CCS114</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
